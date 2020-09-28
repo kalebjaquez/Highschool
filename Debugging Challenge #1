@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+// Do not change the values of payRate or taxRate
+float payRate = 9.75;
+float taxRate = 12.5;
+int hoursWorked;
+int takeHome;
+//Arrows were the wrong way
+// semi colon after hoursWorked
+int main() { 
+  cin >> hoursWorked;
+// subrtracted taxRate from hoursWorked and payRate
+// put float in front of takeHome
+// divided tax rate by a hundered and put hoursWorked*payRate*taxRate in parenthses
+  float takeHome = hoursWorked*payRate-(hoursWorked*payRate*taxRate/100);
+// Moved arrows other way since it is a cout
+cout << "$" << takeHome;
+	return 0;
+}
