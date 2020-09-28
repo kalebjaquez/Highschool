@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+float wins = 3;
+float draws = 1;
+float losses = 0;
+int teamPoints;
+
+int main() {
+    cin >> wins;
+    cin >> draws;
+    cin >> losses;
+   losses = 0;
+   wins = 3*wins;
+   draws = 1*draws;
+ teamPoints = wins+draws+losses;
+     cout << " Your final teamPoints are: ";
+    cout << teamPoints;
+	return 0;
+}
