@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int number1;
+int number2;
+int answer;
+
+    int main() {
+    cout << "Enter integer:";
+    cin >> number1;
+    cin >> number2;
+    if(number1 % number2 == 0 || number2 % number1 == 0) {
+    answer = number1/number2;
+        cout << "True";
+    }else{
+    cout << " False";
+    }
+	return 0;
+}
