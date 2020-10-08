@@ -1,0 +1,32 @@
+//Kaleb Jaquez
+#include <iostream>
+using namespace std;
+
+// This program is designed to calculate a factorial. A factorial is a mathematical concept.
+// It is notated by an exclamation mark. Let's see an example : 4! = 4*3*2*1 = 24
+// You start with the first number and the multiply it by ever positive integer smaller than that number.
+// Another example : 5! = 5*4*3*2*1 = 120
+// It gets big very quick, so there is a conditional statement here to control the input.
+// We don't want the input to be too large because that might overwhelm the computer, or simply give us the wrong answer.
+//
+// The code doesn't work. Fix it!
+
+int main() {
+    int factorial;
+    cin >> factorial;
+    // deleted int product = 1
+    //changed the arrow the other way
+    if (factorial < 10){
+// Added semi colon after i-- and after 0 I added a semi colon, also factorial
+// int i now equals the factorial minus 1; i is greater then 1 
+        for (int i = factorial - 1; i > 1; i--) {
+            //factorial will now  = factorial times i
+            factorial = factorial * i;
+        }
+        
+    } else {
+        cout << "Your input is too large. Try again.";
+    }
+    cout << factorial;
+    return factorial;
+}
