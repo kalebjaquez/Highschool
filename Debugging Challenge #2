@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+// This code is meant to calculate the total cost of purchasing a given number of units.
+// The first 20 units cost $60 a piece. Every unit purchased after that is $50 a piece.
+// There is also a $25 flat fee for shipping and handling.
+//
+// Currently the code does not work. Fix it.
+//
+// Check against your own hand-calculated examples.
+
+float units;
+float totalCost;
+
+int main() {
+    cin >> units;
+    if(units >20)
+    {totalCost = (60* 20 + (units - 20) * 50) + 25;
+    }
+else {
+     totalCost = 60 * units + 25;
+}
+    cout << "The total purchase cost is " << totalCost;
+	return 0;
+}
