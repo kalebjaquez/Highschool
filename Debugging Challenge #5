@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+// This gist of this code is correct. It creates to variables p and r using pointers. But, something is amiss in the output.
+// It's not calling up the right thing at the right time. It seems like this person is confused about pointers.
+// Fix the output section so that the sentences makes sense.
+
+
+int main() {
+    // This is fine
+    int *p = new int;
+    *p = 10;
+    int *r = new int;
+    *r = 15;
+    
+    // Output section
+    // changed &p to *p and *p to &p
+    cout << "The number " << *p << " is stored in memory at " << &p << endl;
+     // changed &p to *p and *p to &p
+    cout << "The number " << *r << " is stored in memory at " << &r << endl;
+    // changed &r to a pointer *r
+    cout << "The sum of " << *r << " and " << *p << " is " << *r+*p;
+    // changed &r to *r and &p to *p
+    
+	return 0;
+}
