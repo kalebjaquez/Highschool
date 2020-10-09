@@ -1,0 +1,37 @@
+//Kaleb Jaquez
+#include <iostream>
+#include <string>
+#include <array>
+
+using namespace std;
+
+// The goal of this code is to add the contents of two arrays and then average their results.
+// Each array is summed. And then the resulting sums are averaged together.
+// This is not too different from calculating a final grade in a class where
+// there are two equal categories (like classwork and projects, say).
+
+// The code doesn't work. Fix it. REMEMBER TO COMMENT ON WHAT YOU ARE CHANING AND WHY.
+
+// It should be returning a value of 12.5
+
+int main() {
+    // Leave the arrays alone. If you have to change the data to get the
+    // result that you need then you probably are on the wrong track.
+    int classwork[5] = {1,2,3,4,5};
+    int projects[4] = {4,3,2,1};
+    
+// added another temp_sum  then just added it where needed and then added the two temporary sums and added them then divided by 2.
+    float temp_sum1 = 0;
+    float temp_sum2 = 0;
+    for (unsigned i = 0 ; i < 5 ; i++){
+        temp_sum1 = temp_sum1 + classwork[i];
+    }
+    for (unsigned j = 0 ; j < 4 ; j++){
+        temp_sum2 = temp_sum2 + projects[j];
+    }
+    // avg is now a float 
+    float avg = (temp_sum1 + temp_sum2)/2;
+    cout << avg;
+    
+	return avg;
+}
