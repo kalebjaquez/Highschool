@@ -1,0 +1,18 @@
+#include <iostream>
+#include <array>
+#include <string>
+using namespace std;
+// SA is seperate array
+int SA (string one,string two){
+  int answer = 0;
+
+  for(unsigned i = 0; i < one.size(); i++){
+    // using absolute value to help find what word is close to the word dinosor.
+    answer += abs(int(one[i]) - int(two[i]));
+  } 
+  return answer;
+}
+int main() {
+  cout << SA("dinosaur","dinosor");
+  return 0;
+}
