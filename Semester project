@@ -1,0 +1,223 @@
+#include <iostream>
+using namespace std;
+string answer;
+int playerScore = 0;
+
+void checkWhen(){
+ if(playerScore == 5){
+cout << endl;
+cout << endl;
+cout << endl;
+cout << "You Win! Congrats!, you can keep playing if you would like too.";
+}
+}
+
+int main()
+{
+cout << "Welcome to the paint mix color game!" << endl;
+cout << endl;
+cout << "Instructions: In this game you try to guess what two colors when mixed together like when you mix paint together.";
+cout << endl;
+cout << endl;
+cout << "Question 1: What does the colors red, and blue make when mixed together?";
+cout << endl;
+cin >> answer;
+if(answer == "purple"){
+cout << "Correct, you have earned 1 point!";
+playerScore += 1;
+  checkWhen();
+} else {
+   cout << "Your are incorrect you have lost a point...Correct answer is purple";
+    playerScore -= 1;
+      checkWhen();
+}
+{ 
+cout << endl;
+cout << endl;
+cout << "Question 2: What do the colors red, and yellow make when mixed together?";
+cout << endl;
+cin >> answer;
+if(answer == "orange"){
+cout << "Correct, you have earned 1 point!";
+playerScore += 1;
+  checkWhen();
+
+} else {
+    cout << "Your are incorrect you have lost a point...Correct answer is orange";
+    playerScore -= 1;
+      checkWhen();
+
+}
+{
+cout << endl;
+cout << endl;
+cout << "Question 3: What do the colors orange and blue make when mixed together?";
+cout << endl;
+cin >> answer;
+if(answer == "brown"){
+cout << "Correct, you have earned 1 point!";
+playerScore += 1;
+  checkWhen();
+
+} else {
+  cout << "You are incorect you have lost a point... Correct answer is brown";
+  playerScore -= 1;
+    checkWhen();
+
+}
+{
+ cout << endl;
+ cout << endl;
+cout << "Question 4: What do the colors yellow and blue make when mixed together?";
+cout << endl;
+cin >> answer;
+if(answer == "green"){
+cout << "Correct, you have earned 1 point!";
+playerScore += 1;
+  checkWhen();
+} else {
+  cout << "You are incorect you have lost a point... Correct answer is green";
+  playerScore -= 1;
+    checkWhen();
+
+  }
+{
+ cout << endl;
+ cout << endl;
+cout << "Question 5: What do the colors red and green make when mixed together?";
+cout << endl;
+cin >> answer;
+if(answer == "yellow"){
+cout << "Correct, you have earned 1 point!";
+playerScore += 1;
+cout << endl;
+cout << endl;
+  cout << "Your Score is: " << playerScore;
+    checkWhen();
+} else {
+  cout << "You are incorect you have lost a point... Correct answer is yellow";
+  playerScore -= 1;
+  cout << endl;
+  cout << endl;
+  cout << "Your Score is: " << playerScore;
+    checkWhen();
+}
+{
+cout << endl;
+cout << endl;
+cout << "Question 6: What do the colors purple and yellow make when mixed together?";
+cout << endl;
+cin >> answer;
+if(answer == "grey"){
+cout << "Correct, you have earned 1 point!";
+playerScore += 1;
+  checkWhen();
+} else {
+  cout << "You are incorect you have lost a point... Correct answer is grey";
+  playerScore -= 1;
+    checkWhen();
+}
+{
+  cout << endl;
+  cout << endl;
+cout << "Question 7: What do the colors orange and yellow make when mixed together?";
+cout << endl;
+cin >> answer;
+if(answer == "green"){
+cout << "Correct, you have earned 1 point!";
+playerScore += 1;
+  checkWhen();
+} else {
+  cout << "You are incorrect you have lost a point... Correct answer is green";
+  playerScore -= 1;
+  checkWhen();
+}
+{
+  cout << endl;
+  cout << endl;
+  cout << "Question 8: What do the colors blue and green make when mixed together?";
+  cout << endl;;
+   cout << "Hint: The answer is two colors put together with a - in between the two colors Example; orange-yellow, purple-blue, etc.";
+  cout << endl;
+  cin >> answer;
+  if(answer == "green-blue"){
+    cout << "Correct, you have earned 1 point!";
+    playerScore += 1;
+    checkWhen();
+  } else {
+    cout << "You are incorrect you have lost a point... Correct answer is green-blue";
+    playerScore -= 1;
+    checkWhen();
+}
+{
+  cout << endl;
+  cout << endl;
+  cout << "Question 9: What do the colors blue and green make when mixed together?";
+  cout << endl;
+   cout << "Hint: The color starts with the letter c";
+  cout << endl;
+  cin >> answer;
+  if(answer == "cyan"){
+    cout << "Correct, you have earned 1 point!";
+    playerScore += 1;
+    checkWhen();
+  } else {
+    cout << "You are incorrect you have lost a point... Correct answer is cyan";
+    playerScore -= 1;
+    checkWhen();
+}
+{
+  cout << endl;
+  cout << endl;
+  cout << "Question 10: What do the colors red and white make when mixed together?";
+  cout << endl;
+  cin >> answer;
+  if(answer == "pink"){
+    cout << "Correct, you have earned 1 point!";
+    playerScore += 1;
+    checkWhen();
+  } else {
+    cout << "You are incorrect you have lost a point... Correct answer is pink";
+    playerScore -= 1;
+    checkWhen();
+}
+{
+   cout << endl;
+  cout << endl;
+  cout << "Bonus Question: This question is worth 3 points!";
+  cout << endl;
+  cout << "What do the colors red,blue, and green make when mixed together?";
+ cout << endl;
+   cin >> answer;
+   if(answer == "white"){
+    cout << "Correct! You have earned 3 bonus points added to your score!";
+    playerScore += 3;
+   } else {
+  cout << "You are incorrect, this will not negatively affect your score";
+  }
+ {
+{
+  cout << endl;
+  cout << "Your final score is: " << playerScore;
+  if(playerScore >= 5){ 
+    cout << endl;
+    cout << " You won the game Congrats!";
+     cout << endl;
+    cout << "Play again if you would like, by pressing  the run button again";
+  } else {
+    cout << endl;
+    cout << "You didn't have enough points to win... try again if you would like, by pressing the run button again";
+}
+}  
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
